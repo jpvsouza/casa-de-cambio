@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite --open",
-    "lint": "npx eslint ./src"
+    "lint": "npx eslint ./src",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "surge": "^0.23.1",
     "sweetalert2": "^11.7.3",
     "vite": "^4.1.4"
   },
