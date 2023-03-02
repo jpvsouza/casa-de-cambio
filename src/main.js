@@ -1,4 +1,4 @@
-import './style.css';
+import '../style.css';
 
 // Importa a biblioteca sweet alert para mostrar erro mais bonito
 import Swal from 'sweetalert2';
@@ -27,7 +27,8 @@ const getExchange = () => {
       .json()
       .then((data) => {
         Object.keys(data.rates).forEach((cotacao) => {
-          const card = document.createElement('h6');
+          const card = document.createElement('div');
+          card.setAttribute('class', 'h-100 col-sm-6 col-md-4 col-lg-3 card text-center');
           card.innerText = `${cotacao} = ${data.rates[cotacao]}`;
           grid.appendChild(card);
         });
